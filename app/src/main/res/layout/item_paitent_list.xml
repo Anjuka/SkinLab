@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/home_background"
+    android:layout_marginBottom="40dp">
+
+    <ImageView
+        android:id="@+id/iv_pait_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_def_img" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pait_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/belleza_regular"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/iv_next"
+        app:layout_constraintStart_toEndOf="@+id/iv_pait_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/belleza_regular"
+        android:text="Accept"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_reject"
+        android:background="@drawable/accept_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_pait_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pait_name" />
+
+    <Button
+        android:id="@+id/btn_reject"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:background="@drawable/reject_baack"
+        android:fontFamily="@font/belleza_regular"
+        android:textColor="@color/white"
+        android:padding="2dp"
+        android:text="Reject"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_next"
+        app:layout_constraintStart_toEndOf="@+id/btn_accept"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pait_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_que_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textSize="25dp"
+        android:fontFamily="@font/belleza_regular"
+        android:textColor="#444444"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_que"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/belleza_regular"
+        android:text="How many liters of water do you"
+        android:textColor="#444444"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_que_head"
+        app:layout_constraintTop_toBottomOf="@+id/tv_que_head" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_que"
+        app:layout_constraintStart_toStartOf="@+id/tv_que"
+        app:layout_constraintTop_toBottomOf="@+id/tv_que">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/belleza_regular"
+            android:text="  1-2l"
+            android:textColor="#444444"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_que"
+            app:layout_constraintTop_toBottomOf="@+id/tv_que" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/belleza_regular"
+            android:text="  1-2l"
+            android:textColor="#444444"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_que"
+            app:layout_constraintTop_toBottomOf="@+id/rb_1" />
+
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/belleza_regular"
+            android:text="  1-2l"
+            android:textColor="#444444"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_que"
+            app:layout_constraintTop_toBottomOf="@+id/rb_2" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/dot_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <ImageView
+            android:id="@+id/iv_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
